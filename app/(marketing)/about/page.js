@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react'
+import Image from 'next/image';
 
 function About() {
 const [title, setTitle] = useState();
@@ -44,6 +45,7 @@ if(mainTask.length > 0){
   return (
     <div>
       <h1 className='font-bold text-4xl bg-blue-500 text-center p-3'>My To do list with Two way Binding</h1>
+      
       <form className='flex justify-center gap-3 m-3' onSubmit={submitHandler}>
         <input type='text' className='text-2xl border-black bg-amber-300 p-2 pl-2.5 rounded-2xl border' 
         placeholder='Add Task here'

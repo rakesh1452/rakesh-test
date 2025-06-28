@@ -1,6 +1,5 @@
-import { Header } from "@/Components/Header";
 import "./globals.css";
-import ContextProvider from "@/Helper/Context"; // ✅ assuming default export
+import { Header } from "../Components/Header";
 
 export const metadata = {
   title: "My App",
@@ -10,11 +9,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body suppressContentEditableWarning>
-        <Header logo={"Logo"} />
-        <ContextProvider>
-          {children}
-        </ContextProvider>
+      <head />
+      <body>     
+          <Header logo="Logo" />
+          {children}       
       </body>
     </html>
   );
