@@ -8,7 +8,7 @@ function Page() {
 
   return (
     <div className='mx-auto container'>   
-      <h1 className='text-green-500 text-3xl text-center'>Shree Ganesha Namah:</h1>
+      <h1 className='text-green-500 text-3xl text-center'>Shree Ganesha Namah</h1>
     {
       show ? <h2>Dikh raha hai</h2> : <h2>Nahi Dikh raha</h2>
     }
